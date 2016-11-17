@@ -63,11 +63,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	__webpack_require__(1);
 	
-	var _defaultOptions = __webpack_require__(3);
+	var _defaultOptions = __webpack_require__(2);
 	
 	var _defaultOptions2 = _interopRequireDefault(_defaultOptions);
 	
-	var _uriEncoder = __webpack_require__(2);
+	var _uriEncoder = __webpack_require__(3);
 	
 	var _responseHelpers = __webpack_require__(4);
 	
@@ -599,6 +599,24 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ function(module, exports) {
 
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  headers: {
+	    'Accept': 'application/json',
+	    'Content-Type': 'application/json'
+	  },
+	  credentials: 'same-origin' // enables cookies
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -679,24 +697,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    add(prefix, obj);
 	  }
 	};
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  headers: {
-	    'Accept': 'application/json',
-	    'Content-Type': 'application/json'
-	  },
-	  credentials: 'same-origin' // enables cookies
-	};
-	module.exports = exports['default'];
 
 /***/ },
 /* 4 */
