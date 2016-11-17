@@ -5,7 +5,7 @@ import { param } from './util/uri-encoder';
 import { checkStatus, parseJSON } from './util/response-helpers';
 
 export const get = (url, options={}) => {
-  const { data } = options; // destructuring
+  const data = options.data;
   let requestUrl = url;
   delete options.data;
 

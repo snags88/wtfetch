@@ -1,9 +1,20 @@
-var assert = require('chai').assert;
+import { expect } from 'chai';
+import sinon from 'sinon';
 
-describe('Array', function() {
-  it('should start empty', function() {
-    var arr = [];
+import { get, post, patch, deleteRequest } from 'index';
 
-    assert.equal(arr.length, 0);
+describe('fetch request wrappers', () => {
+  beforeEach( () => {
+    sinon.spy(window, 'fetch');
+  });
+
+  afterEach( () => {
+    window.fetch.restore();
+  });
+
+  describe('get()', () => {
+    it('runs the test', () => {
+      expect(1).to.equal(1);
+    });
   });
 });

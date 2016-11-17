@@ -75,8 +75,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var get = exports.get = function get(url) {
 	  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-	  var data = options.data; // destructuring
 	
+	  var data = options.data;
 	  var requestUrl = url;
 	  delete options.data;
 	
