@@ -1,0 +1,24 @@
+{
+  "name": "wtfetch",
+  "version": "1.0.0",
+  "description": "A wrapper around the fetch API to simplify making http requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/snags88/wtfetch.git"
+  },
+  "keywords": [
+    "fetch",
+    "javascript",
+    "js"
+  ],
+  "author": "Seiji Naganuma <snaganumas@gmail.com> (https://snags88.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snags88/wtfetch/issues"
+  },
+  "homepage": "https://github.com/snags88/wtfetch#readme"
+}
