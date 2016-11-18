@@ -4,7 +4,7 @@ import DefaultOptions from './default-options';
 import { param } from './util/uri-encoder';
 import { checkStatus, parseJSON } from './util/response-helpers';
 
-export const get = (url, options={}) => {
+const get = (url, options={}) => {
   let requestUrl = url;
   const data = options.data;
   delete options.data;
@@ -24,7 +24,7 @@ export const get = (url, options={}) => {
   );
 }
 
-export const post = (url, options={}) => {
+const post = (url, options={}) => {
   const data = options.data;
   delete options.data;
 
@@ -44,7 +44,7 @@ export const post = (url, options={}) => {
   );
 }
 
-export const patch = (url, options={}) => {
+const patch = (url, options={}) => {
   const data = options.data;
   delete options.data;
 
@@ -64,7 +64,7 @@ export const patch = (url, options={}) => {
   );
 }
 
-export const deleteRequest = (url, options={}) => {
+const deleteRequest = (url, options={}) => {
   const data = options.data;
   delete options.data;
 
@@ -83,3 +83,5 @@ export const deleteRequest = (url, options={}) => {
       .then(parseJSON)
   );
 }
+
+export { get, post, patch, deleteRequest };

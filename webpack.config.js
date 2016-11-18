@@ -19,7 +19,6 @@ if (env === 'build') {
 
 module.exports = {
   entry: path.join(__dirname, 'src','index.js'),
-  devtool: 'source-map',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: outputFile,
