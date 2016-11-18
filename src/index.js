@@ -5,8 +5,8 @@ import { param } from './util/uri-encoder';
 import { checkStatus, parseJSON } from './util/response-helpers';
 
 export const get = (url, options={}) => {
-  const data = options.data;
   let requestUrl = url;
+  const data = options.data;
   delete options.data;
 
   if (data) { requestUrl = url + '?' + param(data); }
