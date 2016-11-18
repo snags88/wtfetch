@@ -2,7 +2,7 @@
   "name": "wtfetch",
   "version": "1.0.0",
   "description": "A wrapper around the fetch API to simplify making http requests",
-  "main": "lib/index.js",
+  "main": "dist/wtfetch.min.js",
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
