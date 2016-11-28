@@ -1,6 +1,5 @@
 import 'whatwg-fetch';
 
-import DefaultOptions from './default-options';
 import { param } from './util/uri-encoder';
 import { checkStatus, parseJSON } from './util/response-helpers';
 
@@ -12,7 +11,6 @@ const get = (url, options={}) => {
   if (data) { requestUrl = url + '?' + param(data); }
 
   const requestOptions = Object.assign({},
-    DefaultOptions,
     options,
     { method: 'GET' }
   );
@@ -29,7 +27,6 @@ const post = (url, options={}) => {
   delete options.data;
 
   const requestOptions = Object.assign({},
-    DefaultOptions,
     options,
     {
       method: 'POST',
@@ -49,7 +46,6 @@ const patch = (url, options={}) => {
   delete options.data;
 
   const requestOptions = Object.assign({},
-    DefaultOptions,
     options,
     {
       method: 'PATCH',
@@ -69,7 +65,6 @@ const deleteRequest = (url, options={}) => {
   delete options.data;
 
   const requestOptions = Object.assign({},
-    DefaultOptions,
     options,
     {
       method: 'DELETE',
